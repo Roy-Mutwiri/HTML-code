@@ -6,46 +6,61 @@
     /* CSS styles for the portfolio page */
     body {
       font-family: Arial, sans-serif;
-      color: aliceblue;
       margin: 0;
-      background-color: #0b0b0b;
+      padding: 20px;
+      background-color: #f5f5f5; /* Add your desired background color here */
     }
 
     h1 {
       text-align: center;
-      color: chartreuse;
-      background-color:brown;
-    
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .title-image {
+      width: 50px; /* Adjust the width of the image as needed */
+      height: 50px; /* Adjust the height of the image as needed */
+      margin-right: 10px; /* Add some spacing between the image and text */
+    }
+
+    .title-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* Maintain aspect ratio of the image */
     }
 
     .skills {
-        
       margin-bottom: 20px;
-    
-      
     }
 
     .skills ul {
       list-style-type: none;
       padding: 0;
-      color: aqua;
-      
     }
 
     .skills li {
-      padding: 10px 0;
-      
-      
+      padding: 5px 0;
+    }
+
+    .code-snippet {
+      background-color: #f9f9f9;
+      padding: 10px;
+      overflow-x: auto;
     }
   </style>
 </head>
 <body>
-  <h1>Roy's Portfolio</h1>
+  <h1>
+    <div class="title-image">
+      <img src="your-icon-url.jpg" alt="Your Icon">
+    </div>
+    Roy's Portfolio
+  </h1>
   
   <h2>Skills</h2>
   <div class="skills">
     <ul>
-    
       <li>Python</li>
       <li>HTML</li>
       <li>CSS</li>
@@ -54,14 +69,19 @@
   </div>
   
   <h2>Projects</h2>
-  
-  
   <!-- Include Roy's project details here -->
-  School Login System
   
-  <h2>Contact:<h3>+254758620199</h3>
-  </h2>
+  <h2>Contact</h2>
   <!-- Include Roy's contact information here -->
-  
+
+  <h2>Python Code Snippet</h2>
+  <div class="code-snippet">
+    <pre><code>
+def greet(name):
+    print(f"Hello, {name}!")
+
+greet("Roy")
+    </code></pre>
+  </div>
 </body>
 </html>
